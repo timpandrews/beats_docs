@@ -1,6 +1,13 @@
 site_name: Cycling Beats - Documentation
+nav:
+  - Home: "index.md"
+  - Installation Guide - Dev: "dev_install.md"
+  - Tools: "tools.md"
+  - Examples: "examples.md"
+  - Checklist: "checklist.md"
 theme:
   name: material
+  logo: assets/logo.jpg
   features:
     - navigation.tabs
     - navigation.sections
