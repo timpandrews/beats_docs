@@ -57,10 +57,33 @@ def bubble_sort(items):
 
 ## Icons and Emojs
 
-:smile: 
+##### Emojs: <small><a href="https://gist.github.com/rxaviers/7360908" target="_blank">list</a></small>  
+:smile: :purple_heart:  
 
+
+##### FontAwesome Icons <small><a href="https://github.com/squidfunk/mkdocs-material/tree/master/material/templates/.icons/fontawesome" target="_blank">list</a></small>  
 :fontawesome-regular-face-laugh-wink:
+:fontawesome-brands-twitter:{ .twitter }  
 
-:fontawesome-brands-twitter:{ .twitter }
 
+##### Octicons <small><a href="https://github.com/squidfunk/mkdocs-material/tree/master/material/templates/.icons/octicons" target="_blank">list</a></small>  
 :octicons-heart-fill-24:{ .heart }
+:octicons-alert-24:  
+>
+
+##### Simple Icons <small><a href="https://github.com/squidfunk/mkdocs-material/tree/master/material/templates/.icons/simple" target="_blank">list</a></small>  
+:simple-adidas:
+:simple-digitalocean:  
+
+
+##### Material Icons <small><a href="https://github.com/squidfunk/mkdocs-material/tree/master/material/templates/.icons/material" target="_blank">list</a></small>     
+:material-account-cog:
+:material-account-credit-card-outline:
+
+
+:logo-monochrome:
+:logo:
+
+
+
+ 

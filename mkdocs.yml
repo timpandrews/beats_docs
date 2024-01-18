@@ -3,6 +3,9 @@ nav:
   - Home: "index.md"
   - Installation Guide - Dev: "dev_install.md"
   - Tools: "tools.md"
+  - Details:
+    - Forms using django-boostrap5: "details/forms_w_django-bootstrap5.md"
+    - Forms using django-bootstrap-input-groups: "details/forms_w_django-bootstrap-input-group.md"
   - Examples: "examples.md"
   - Checklist: "checklist.md"
 theme:
@@ -39,6 +42,7 @@ extra:
       link: https://github.com/timpandrews
 
 markdown_extensions:
+  - attr_list
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
