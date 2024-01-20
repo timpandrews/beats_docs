@@ -15,8 +15,9 @@
     pip install poetry
     ```
     ```bash
-    poetry install
+    poetry install --no-root
     ```
+    <small>\* This command installs the project's dependencies defined in pyproject.toml without including the root project itself.</small>
 4. Activate the Virtual Environment:
     ```bash
     poetry shell
