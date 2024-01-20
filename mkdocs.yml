@@ -2,6 +2,7 @@ site_name: Cycling Beats - Documentation
 nav:
   - Home: "index.md"
   - Installation Guide - Dev: "dev_install.md"
+  - Tools & Resources: "tools_resources.md"
   - Dependencies: "dependencies.md"
   - Beats Tools: "beats_tools.md"
   - Extras:
