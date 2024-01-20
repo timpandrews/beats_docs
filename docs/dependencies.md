@@ -2,23 +2,23 @@
 
 ## Project Based Tools
 
- - Poetry (Python packaging and dependency management made easy)  
+ - Poetry ![poetry-python](assets/icons/poetry-python.svg){: width="2%"} (Python packaging and dependency management made easy)   
 <a href="https://python-poetry.org/" target="_blank">Poetry.org</a> |
 <a href="https://github.com/python-poetry/poetry" target="_blank">:fontawesome-brands-github: GitHub</a> |
 <a href="https://realpython.com/dependency-management-python-poetry/" target="_blank">Realpython Tutorial</a> 
 
- - pre-commit (A framework for managing and maintaining multi-language pre-commit hooks.)  
+ - pre-commit ![pre-commit](assets/icons/pre-commit.svg){: width="2%"}  (A framework for managing and maintaining multi-language pre-commit hooks.)  
  <a href="https://pre-commit.com/" target="_blank">pre-commit.com</a>
 
- - Starship (Cross-Shell Prompt) <small> * Optional</small>   
+ - Starship ![starship](assets/icons/starship.png){: width="2%"}  (Cross-Shell Prompt) <small> * Optional</small>   
 <a href="https://starship.rs/" target="_blank">starship.rs</a>  
 <a href="https://starship.rs/presets/#pastel-powerline" target="_blank">Theme-Pastel Powerline</a> <small> * Very Optional</small>  
 
-- MkDocs   
-<a href="https://www.mkdocs.org/" target="_blank">:logo: MkDocs</a>
+- MkDocs ![mkdocs](assets/icons/mkdocs.png){: width="2%"}   
+<a href="https://www.mkdocs.org/" target="_blank">![mkdocs](assets/icons/mkdocs.png){: width="2%"} MkDocs</a>
 
-- Material for MkDocs  
-<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a> | 
+- Material for MkDocs :logo:  
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">:logo: Material for MkDocs</a> | 
 <a href="https://www.youtube.com/watch?v=Q-YA_dA8C20" target="_blank">:fontawesome-brands-youtube: Documentation With MkDocs</a>  
 
 
