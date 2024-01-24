@@ -1,13 +1,14 @@
 # BEATS_TOOLS
 
-This Python application is used to build and execute custom admin tools for the Beats Django Web Project.  Currently tools include a convert_strava_csv_to_beats_yaml tool.  Data from the 
-activities.csv file provided by Strava can be converted into a YAML file that can be imported into 
-the Beats Project Database use Django Admin and an Import function provided by the 
+This Python CLI Application is used to build and execute custom admin tools for the Beats Django Web Project.  
+
+Currently tools include a convert_strava_csv_to_beats_yaml tool.  Data from the activities.csv file provided by Strava can be converted into a YAML file that can be imported into the Beats Project Database use Django Admin and an Import function provided by the 
 django-import-export library. 
 
-The tools is command-line interface to define the command, input file, output file, and user ID.
-
 <a href="https://github.com/timpandrews/beats_tools" target="_blank">:fontawesome-brands-github: GitHub Repository</a>
+
+Tools Available:  
+  - [convert_strava](#convert-strava-tool)
 
 ## Usage
 
@@ -45,16 +46,26 @@ The tools is command-line interface to define the command, input file, output fi
 
 #### Command Line
 
-- help:
+- help (will list commands available):
 
     ```bash    
     python tools.py --help
     ```
 
-- convert Strava CVS file to Beats YAML file:
+### Tools
 
-    ```bash
-    python tools.py convert --user_id [user_id] [input_file] [output_file] 
-        -- or --
-    python tools.py convert [input_file] [output_file] --user_id [user_id]
-    ```
+#### Convert Strava Tool
+Takes Activities.CSV that Strava will provide when you request your data history, and
+a userID that can be found in the Beats DjangoAdminSite-UserModel and
+creats a .YAML file ready for import into Beats.  Import can be done using the Beats
+DjangeAdminSite-ActivityModel using the import tools that is provided by the
+django-import-export library.
+
+```bash
+python tools.py convert_strava --help
+python tools.py convert_strava [-h] [--user_id USER_ID] [input] [output]
+```
+i.e.
+```bash
+python tools.py convert_strava --user_id 123 activities.csv output.yaml
+```

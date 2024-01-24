@@ -6,8 +6,11 @@ nav:
   - Dependencies: "dependencies.md"
   - Beats Tools: "beats_tools.md"
   - Extras:
-    - Forms using django-boostrap5: "extras/forms_w_django-bootstrap5.md"
-    - Forms using django-bootstrap-input-groups: "extras/forms_w_django-bootstrap-input-group.md"
+    - Project Extras: "extras/_extras.md"
+    - django-split-settings: "extras/django-split-settings.md"
+    - Forms using django-boostrap5: "extras/forms-w-django-bootstrap5.md"
+    - Forms using django-bootstrap-input-groups: "extras/forms-w-django-bootstrap-input-group.md"
+    - mkdocs_install_locally: "extras/mkdocs_install_locally.md"
   - Examples: "examples.md"
   - Checklist: "checklist.md"
 theme:
