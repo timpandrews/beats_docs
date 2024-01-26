@@ -1,18 +1,22 @@
 site_name: Cycling Beats - Documentation
 nav:
   - Home: "index.md"
-  - Installation Guide - Dev: "dev_install.md"
-  - Tools & Resources: "tools_resources.md"
+  - Install Guides: "install_guide.md"
+  - Tools, Resources, & Procedures: "tools.md"
   - Dependencies: "dependencies.md"
-  - Beats Tools: "beats_tools.md"
+  - Beats-Tools: "beats_tools.md"
+  - Beats-Docs: "beats_docs.md"
+  - Misc.:
+    - Misc.: "misc.md"
+    - Examples: "examples.md"
+    - Checklist: "checklist.md"
   - Extras:
     - Project Extras: "extras/_extras.md"
     - django-split-settings: "extras/django-split-settings.md"
     - Forms using django-boostrap5: "extras/forms-w-django-bootstrap5.md"
     - Forms using django-bootstrap-input-groups: "extras/forms-w-django-bootstrap-input-group.md"
     - mkdocs_install_locally: "extras/mkdocs_install_locally.md"
-  - Examples: "examples.md"
-  - Checklist: "checklist.md"
+  
 theme:
   name: material
   logo: assets/logo.jpg
