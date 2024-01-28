@@ -42,7 +42,13 @@ Tools Available:
 
 1. Open a terminal.
 2. Navigate to the directory containing the `tool.py` file.
-3. Execute command at command line
+    ```bash
+    cd apps/beats_tools
+    ```
+3. Execute command at command line (e.g.)
+    ```bash    
+    python tools.py --help
+    ```
 
 #### Command Line
 

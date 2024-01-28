@@ -16,16 +16,35 @@ project
             __init__.py
             common.py
             database.py
+            dev_development.py
             local_settings.py
             logging.py
+            smtp.py
 ```
 
 ``` py title="__init__.py (as of 1/25/2024)"
 """
-This is a django-split-settings main file.
-For more information read this:
+Django Settings Configuration using django-split-settings.
+
+For more information on django-split-settings, visit:
 https://github.com/sobolevn/django-split-settings
-Default environment is `developement`.
+
+This file serves as the main entry point for Django settings,
+organizing configurations into modular files for better maintainability.
+
+Default environment is set to 'development'.
+
+Usage
+-----
+- Standard Django settings are configured in 'common.py'.
+- PostgreSQL settings are configured in 'database.py'.
+- SMTP settings are configured in 'smtp.py'.
+- Logging settings are configured in 'logging.py'.
+- Environment-specific settings can be defined in 'env_{DJANGO_ENV}.py'.
+- Local overrides (not in version control) can be placed in 'local_settings.py'.
+
+To customize settings for specific environments or scenarios, modify the
+respective configuration files mentioned above.
 """
 
 import os
@@ -37,24 +56,28 @@ from split_settings.tools import include, optional
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
+# Initialize environment variables
 env = environ.Env()
+
+# Read environment variables from the .env file in the 'core' directory
 environ.Env.read_env(os.path.join(BASE_DIR, "core/.env"))
 
+# Retrieve the current environment or default to 'development'
 DJANGO_ENV = env("DJANGO_ENV") or "development"
 
+# Define the list of base settings files to include
 base_settings = [
     "common.py",  # standard django settings
     "database.py",  # postgres
     "smtp.py",  # smtp
     "logging.py",  # logging
-    # TODO: Setup settings files for Dev and Prod
-    optional(f"env_{DJANGO_ENV}.py"),
-    # Optionally override some settings:
-    optional("local_settings.py"),
+    optional(f"env_{DJANGO_ENV}.py"),  # environment-specific settings
+    optional("local_settings.py"),  # local overrides (not in version control)
 ]
 
-# Include settings:
+# Include settings by passing the list of base settings files
 include(*base_settings)
+
 ```
 
 

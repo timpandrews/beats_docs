@@ -141,12 +141,6 @@ poetry run isort file_name.py
 ### pre-commit ![pre-commit](assets/icons/pre-commit.svg){: width="2%"} 
 TODO: complete this
 
-### Using the django shell ![django](assets/icons/django-icon.svg){: width=2%"} 
-
-```bash
-make dj-shell
-```
-TODO: complete this
 
 ### Linters ![Linters](assets/icons/linter.png){: width="2%"} 
 TODO: complete this

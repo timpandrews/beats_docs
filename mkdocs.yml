@@ -1,15 +1,18 @@
 site_name: Cycling Beats - Documentation
 nav:
   - Home: "index.md"
-  - Install Guides: "install_guide.md"
+  - Install Guides: 
+    - Install Guides: "install_guides.md"
   - Tools, Resources, & Procedures: "tools.md"
   - Dependencies: "dependencies.md"
   - Beats-Tools: "beats_tools.md"
   - Beats-Docs: "beats_docs.md"
   - Misc.:
     - Misc.: "misc.md"
-    - Examples: "examples.md"
-    - Checklist: "checklist.md"
+    - Checklist: "misc/checklist.md"
+    - Django Shell: "misc/django_shell.md"
+    - Examples: "misc/examples.md"
+    
   - Extras:
     - Project Extras: "extras/_extras.md"
     - django-split-settings: "extras/django-split-settings.md"

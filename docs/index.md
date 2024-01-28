@@ -15,16 +15,18 @@ Project overview TODO: Complete this
 
 - ## Install Guides
     - ### Development
-    - ### Production
+    - ### [Install Guide: Production](install_guide_prod.md)
 - ## Tools, Resources, Procedures
     - ### MakeFile
     - ### Testing & Converage
     - ### Dependency Management (Poetry)
     - ### Linting (pre-commit)
     - ### Project Structure  
-- ## Dependencies
-- ## Beat-Tools 
-- ## Beats-Docs
+- ## [Dependencies](dependencies.md)
+- ## [Beat-Tools](beats_tools.md) 
+- ## [Beats-Docs](beats_docs.md)
 - ## Misc
-    - ### Examples
-    - ### Checklist
+    - ### [Checklist](misc/checklist.md)
+    - ### [Django Shell](misc/django_shell.md)
+    - ### [Examples](misc/examples.md)
+    
