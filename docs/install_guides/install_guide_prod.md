@@ -215,6 +215,15 @@ serving static files :scream:
 
     application = get_wsgi_application()
     ``` 
+    - Issues with permissions for the www-data user and the media & static directories.  
+        - The www-data user needs read and possible? write permissions to static.  
+        - The www-data user needs read/write permissions to media.  
+        - The www-data user needs execute permission to the entire project directory (allows access to directory without accessing individual files)
+
+    - Add enctype="mutipart/form" to any forms saving files to media (e.g., profile avatars in profile forms)
+    ```html
+    <form method="post" enctype="multipart/form">
+    ```
 
 
 ## Sources for the Step by Step Guide:    

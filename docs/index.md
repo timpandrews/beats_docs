@@ -1,8 +1,8 @@
 # Cycling Beats - Documentation
 
-Project overview TODO: Complete this
+Documentation for CyclingBeats (www.cyclingbeats.com).  Ride, Record, Reward: Unleash Your Adventure on Two Wheels!
 
-- ## Documentation Access
+- ### Documentation Access
     - Live URL <a href="https://timpandrews.github.io/beats_docs/" target="_blank">https://timpandrews.github.io/beats_docs/</a>
 
     - Run Locally
@@ -13,20 +13,13 @@ Project overview TODO: Complete this
 
     - Installation Locally [Steps to install locally](extras/mkdocs_install_locally.md)
 
-- ## Install Guides
-    - ### Development
-    - ### [Install Guide: Production](install_guide_prod.md)
-- ## Tools, Resources, Procedures
-    - ### MakeFile
-    - ### Testing & Converage
-    - ### Dependency Management (Poetry)
-    - ### Linting (pre-commit)
-    - ### Project Structure  
-- ## [Dependencies](dependencies.md)
-- ## [Beat-Tools](beats_tools.md) 
-- ## [Beats-Docs](beats_docs.md)
-- ## Misc
-    - ### [Checklist](misc/checklist.md)
-    - ### [Django Shell](misc/django_shell.md)
-    - ### [Examples](misc/examples.md)
+- ### [Install Guides](install_guides.md)
+- ### [Tasks](tasks.md)
+- ### [Tools, Resources, Procedures](tools.md)
+- ### [Dependencies](dependencies.md)
+- ### [Beat-Tools](beats_tools.md) 
+- ### [Beats-Docs](beats_docs.md)
+- ### [Misc](misc.md)
+- ### [Extras](extras.md)
+
     

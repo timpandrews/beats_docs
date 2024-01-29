@@ -1,4 +1,4 @@
-# Django Shell
+# Using Django Shell to Build DB Queries
 Steps for working with the Django Shell, a command-line interface provided by Django to interact with your Django project.  This can be useful for interactively testing and exploring your Django models and queries within the Django Shell. 
 
 - Open Django Shell

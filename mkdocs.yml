@@ -1,24 +1,14 @@
 site_name: Cycling Beats - Documentation
 nav:
   - Home: "index.md"
-  - Install Guides: 
-    - Install Guides: "install_guides.md"
-  - Tools, Resources, & Procedures: "tools.md"
+  - Install Guides: "install_guides.md"
+  - Tasks: "tasks.md"
+  - Tools: "tools.md"
   - Dependencies: "dependencies.md"
   - Beats-Tools: "beats_tools.md"
   - Beats-Docs: "beats_docs.md"
-  - Misc.:
-    - Misc.: "misc.md"
-    - Checklist: "misc/checklist.md"
-    - Django Shell: "misc/django_shell.md"
-    - Examples: "misc/examples.md"
-    
-  - Extras:
-    - Project Extras: "extras/_extras.md"
-    - django-split-settings: "extras/django-split-settings.md"
-    - Forms using django-boostrap5: "extras/forms-w-django-bootstrap5.md"
-    - Forms using django-bootstrap-input-groups: "extras/forms-w-django-bootstrap-input-group.md"
-    - mkdocs_install_locally: "extras/mkdocs_install_locally.md"
+  - Misc.: "misc.md"
+  - Extras: "extras.md"
   
 theme:
   name: material

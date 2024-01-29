@@ -1,13 +1,13 @@
 # Tools, Resources, & Procedures
 
-## MakeFile
+### [MakeFile :link:](tools/makefile.md)
 
-## Testing & Coverage
+### [Testing & Coverage :link:](tools/testing_coverage.md)
 
-## Dependency Management (Poetry)
+### [Dependency Management (Poetry) :link:](tools/dependency_management.md)
 
-## Linting (pre-commit)
+### [Linting (pre-commit) :link:](tools/linting.md)
 
-## Project Structure
+### [Project Structure :link:](tools/project_structure.md)
 
-## Misc.
+### [Tools for Terminal :link:](tools/terminal.md)

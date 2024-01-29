@@ -1,5 +1,7 @@
 # Documentation Checklist
-Provided by ChatGPT - Certainly! Documenting a Django website is crucial for maintaining and enhancing the project over time. Here are some best practices for documenting a Django website:
+<small>Provided by ChatGPT</small>
+
+Certainly! Documenting a Django website is crucial for maintaining and enhancing the project over time. Here are some best practices for documenting a Django website:
 
 1. Project Overview:
     - Provide a high-level overview of the project's purpose and goals.

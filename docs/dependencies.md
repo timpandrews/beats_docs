@@ -14,14 +14,6 @@
 <a href="https://starship.rs/" target="_blank">starship.rs</a>  
 <a href="https://starship.rs/presets/#pastel-powerline" target="_blank">Theme-Pastel Powerline</a> <small> * Very Optional</small>  
 
-- MkDocs ![mkdocs](assets/icons/mkdocs.png){: width="2%"}   
-<a href="https://www.mkdocs.org/" target="_blank">![mkdocs](assets/icons/mkdocs.png){: width="2%"} MkDocs</a>
-
-- Material for MkDocs :logo:  
-<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">:logo: Material for MkDocs</a> | 
-<a href="https://www.youtube.com/watch?v=Q-YA_dA8C20" target="_blank">:fontawesome-brands-youtube: Documentation With MkDocs</a>  
-
-
 ## UI/UX/Frontend Tools
 - django-bootstrap5 <small>\*</small>  
 <a href="https://github.com/zostera/django-bootstrap5" target="_blank">:fontawesome-brands-github: GitHub</a> | 
