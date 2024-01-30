@@ -203,15 +203,13 @@
 11. Spend three days troubleshooting the 502 Bad Gateway Errors and issues with 
 serving static files :scream:
     - Error in wsgi.py.  
-    ```py title="wsgi.py" hl_lines="5-8"
+    ```diff title="wsgi.py"
     import os
 
     from django.core.wsgi import get_wsgi_application
 
-    # it was 
-    # os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
-    # it was changed to:
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project.core.settings")
+    - os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
+    + os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project.core.settings")
 
     application = get_wsgi_application()
     ``` 
