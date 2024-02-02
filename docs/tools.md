@@ -8,6 +8,8 @@
 
 #### [Linting (pre-commit) :link:](tools/linting.md)
 
+#### [Logging :link:](tools/logging.md)
+
 #### [Project Structure :link:](tools/project_structure.md)
 
 #### [Tools for Terminal :link:](tools/terminal.md)
