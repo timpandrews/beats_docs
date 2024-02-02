@@ -2,8 +2,6 @@
 
 ## Listing from pyproject.toml
 
-TODO: Update with djang-admin-env-notice & 
-
 ```yaml title="pyproject.toml (partial, 2/2/2024)"
 [tool.poetry.dependencies]
 python = "^3.12"
