@@ -14,3 +14,7 @@
    - PostgreSQL  
    - [Step by Step Instructions](install_guides/install_guide_prod.md)
 
+#### Production Environment - Addendums
+   - [Add new domain](install_guides/add_new_domain.md)
+   - [Setup auto SSL certs](install_guides/setup_auto_ssl_certs.md)
+

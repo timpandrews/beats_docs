@@ -1,4 +1,4 @@
-# Tools, Resources, & Procedures
+# Tools
 
 #### [MakeFile :link:](tools/makefile.md)
 
@@ -15,3 +15,4 @@
 #### [Tools for Terminal :link:](tools/terminal.md)
 
 #### [Tools for working with .fit files :link:](tools/dot_fit_files.md)
+

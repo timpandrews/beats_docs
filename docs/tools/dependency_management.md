@@ -1,9 +1,9 @@
-# Dependency Management (Poetry)
+# ![Poetry](../assets/icons/poetry-python.svg){: width="10%"} Dependency Management (Poetry)
 
 ## Overview 
 This section provides guidance on using Poetry for dependency management within this project. Poetry simplifies the process of managing Python packages and helps maintain a consistent and reproducible development environment.
 
-![Poetry](../assets/icons/poetry-python.svg){: width="25%"}
+
 
  - Poetry ![poetry-python](../assets/icons/poetry-python.svg){: width="2%"}   
 <small>Poetry is a Python dependency management and packaging tool. It simplifies the process of managing project dependencies, creating virtual environments, and packaging Python projects for distribution. Poetry uses a pyproject.toml file to define dependencies and project settings, making it a modern and user-friendly tool for Python developers.</small>   

@@ -9,9 +9,12 @@ make test
 ```bash
 make lint
 ```
-- Commit Changes & Push to Github :octicons-git-branch-24: Main branch
-- When ready create pull request pull changes from main into production.  
-    - In Github open production branch on click on:   
+- Update :octicons-git-branch-24: main branch with latest changes.
+    Either:
+    - merge new branch into :octicons-git-branch-24: main branch
+    - push changes to :octicons-git-branch-24: main branch
+- When ready, initiate a pull request to merge changes from the main branch into the production branch.  
+    - In Github **open production branch** on click on:   
     n commints behind of <mark style="background-color: lightblue">main</mark>.  
     - You should see something like this:  
     :octicons-git-compare-24: <mark>base: production</mark> :octicons-arrow-left-24: <mark style="background-color: lightblue">compare: main</mark> <span style="color:green"> :octicons-check-24: Able to merge.</span>  ...  
@@ -54,7 +57,7 @@ sudo systemctl restart nginx
 ```
 - If it is a more <mark>complex update</mark> (including changes to the database or dependencies)
 ```bash title="activate virtual environment"
-source /path/to/your/venv/bin/activate
+source _env/bin/activate
 ```   
 ```bash title="install dependencies"
 pip install -r requirements.txt
@@ -74,3 +77,7 @@ sudo systemctl restart gunicorn
 sudo systemctl restart nginx
 ```
 
+- You may need to access the admin site to update settings for django-waffle flags, switches or samples.  Access the admin site at:  /delta/
+```url
+http://cyclingbeats.com/delta/
+```
