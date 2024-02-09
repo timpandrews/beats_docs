@@ -125,7 +125,7 @@ ruff = "^0.1.7"
 - **psycop2-binary**  
 <small>Psycopg is a PostgreSQL adapter for the Python programming language. It is a wrapper for the libpq, the official PostgreSQL client library.</small>  
 <a href="https://www.psycopg.org/docs/index.html" target="_blank">![Psycop](assets/icons/psycopg.png){: width="2%"} psycopg.org</a> | 
-<a href="https://pypi.org/project/django-waffle/" target="_blank">:fontawesome-brands-python: PyPi</a> | [:mag: Internal Docs](extras/psycopg2-binary_vs_psycopg2.md)
+<a href="https://pypi.org/project/django-waffle/" target="_blank">:fontawesome-brands-python: PyPi</a> | [:mag: Internal Docs](extras/psycopg2-binary_vs_psycopg2.md) 
 
 - **pytz**  
 <small>Pytz brings the Olson tz database into Python and thus supports almost all time zones. This module serves the date-time conversion functionalities and helps user serving international client’s base. It enables time-zone calculations in our Python applications and also allows us to create timezone aware datetime instances.</small>  
@@ -140,22 +140,16 @@ ruff = "^0.1.7"
 <a href="https://github.com/yaml/pyyaml" target="_blank">:fontawesome-brands-github: GitHub</a>
 
 
-
-
-
-
-
-
-
 ## Dev Dependencies
-- flake8
-- pre-commit
 - black
-- isort
-- ruff
+- colorlog
 - coverage
-- colorlog 
+- flake8
+- isort
+- pre-commit
+- ruff
 
+ 
 ## Prod Dependencies
 - **gunicorn**  
 <small>Gunicorn is a WSGI server for deploying Django projects, acting as an interface between Django applications and Nginx, handling HTTP requests efficiently.</small>  
