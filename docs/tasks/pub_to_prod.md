@@ -1,11 +1,11 @@
 # Publish to Production 
 ## Digital Ocean Droplet with Ubuntu 22.04 running nginx, gunicorn, and postgreSQL  
 
-- Testing on local machine (fix any issues discovered in testing before next step)
+- Complete full Testing on local machine (fix any issues discovered in testing before next step)
 ```bash
 make test
 ```
-- Linting on local machine (fix any linting issues before moving on)
+- Complete full Linting on local machine (fix any linting issues before moving on)
 ```bash
 make lint
 ```

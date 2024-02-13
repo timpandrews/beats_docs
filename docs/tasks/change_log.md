@@ -8,6 +8,8 @@ https://www.cyclingbeats.com/delta/common/changelog/
 - Add Change Log :heavy_plus_sign:
 - Add Change Log Details for the Change Log
 
-### References : 
+##### Citations
+<small>
 <a href="https://semver.org/" target="_blank">semver.org</a>  
 <a href="https://keepachangelog.com/en/1.1.0/" target="_blank">keepachangelog.com</a>
+</small>

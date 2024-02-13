@@ -1,6 +1,7 @@
 site_name: Cycling Beats - Documentation
 nav:
   - Home: "index.md"
+  - Conventions: "conventions.md"
   - Install Guides: "install_guides.md"
   - Tasks: "tasks.md"
   - Tools: "tools.md"
