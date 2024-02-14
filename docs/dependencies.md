@@ -8,6 +8,7 @@ python = "^3.12"
 django = "^5.0"
 django-admin-env-notice = "^1.0"
 django-allauth = "^0.59.0"
+django-auto-logout = "^0.5.1"
 django-bootstrap-datepicker-plus = "^5.0.5"
 django-bootstrap-input-group = "^1.0.1"
 django-bootstrap5 = "^23.3"
@@ -50,6 +51,11 @@ ruff = "^0.1.7"
 <a href="https://docs.allauth.org/en/latest/" target="_blank">:octicons-book-24: ReadTheDocs</a> | 
 <a href="https://pypi.org/project/django-environ/" target="_blank">:fontawesome-brands-python: PyPi</a> | 
 <a href="https://github.com/pennersr/django-allauth" target="_blank">:fontawesome-brands-github: GitHub</a>
+
+- **django-auto-logout**  
+<small>The django-auto-logout library is a middleware for Django applications that automatically logs out users after a certain period of inactivity.</small>  
+<a href="https://pypi.org/project/django-auto-logout/" target="_blank">:fontawesome-brands-python: PyPi</a> | 
+<a href="https://github.com/bugov/django-auto-logout" target="_blank">:fontawesome-brands-github: GitHub</a>
 
 - **django-bootstrap-datepicker-plus**  
 <small>This django widget contains Date-Picker, Time-Picker, DateTime-Picker, Month-Picker and Year-Picker input with date-range-picker functionality.</small>  
