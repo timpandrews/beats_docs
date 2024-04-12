@@ -24,6 +24,8 @@ pillow = "^10.1.0"
 psycopg2-binary = "^2.9.9"
 pytz = "^2023.3.post1"
 pyyaml = "^6.0.1"
+geopy = "^2.4.1"  #TODO: Need to document
+folium = "^0.15.1"  #TODO: Need to document
 
 
 [tool.poetry.group.dev.dependencies]

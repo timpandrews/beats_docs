@@ -1,5 +1,11 @@
 # Branch Naming Conventions
 
+### Sample Branch Names
+- `prefix/branch-description-card#`
+- `feature/user-authentication`
+- `bugfix/fix-header-styling-40`
+- `hotfix/security-patch`
+
 ### Basic Rules
 - Lowercase and Hyphen-separated
 - Alphanumeric Characters (a-z, 0-9)
@@ -16,16 +22,8 @@ Branches used for fixing bugs
 Branches that are made directly from production branch to fix critical bugs in production environment  
 `hotfix/`
 
-
 ### Card/Ticket Numbers (optional)
 - Reference Trello Card Number or Ticket Numbers at end of branch name
-
-### Sample Branch Names
-- `prefix/branch-description-card#`
-- `feature/user-authentication`
-- `bugfix/fix-header-styling-40`
-- `hotfix/security-patch`
-
 
 ##### Citations
 <small>

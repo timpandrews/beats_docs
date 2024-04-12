@@ -1,11 +1,97 @@
 # Testing & Coverage
 
-### TODO: Complete Testing & Coverage Docs
-
 ![Testing](../assets/icons/django-testing.png){: width="25%"}
 ![Coverage](../assets/icons/coverage.png)
 
-### CommonSetup
+## Common Setup Mixins
+
+In the project's test setup, a series of mixins have been developed under the module __project.tests.setup__. These mixins serve the purpose of standardizing the creation of various objects such as users, activities, levels, containers, and others, which are commonly used in test cases. By utilizing these mixins, the process of setting up test data becomes consistent and streamlined across different test cases.
+
+These mixins are designed to be inherited by individual TestCase classes based on their specific testing requirements. Test classes can inherit a combination of these mixins depending on the data setup needed for each test scenario. This modular approach allows for greater flexibility and reusability of test setup code, promoting cleaner and more maintainable test suites.
+
+### Usage
+
+- Import required Mixins
+
+```py
+from project.tests.setup import BasicUserSetupMixin, LevelSetupMixin
+```
+
+- Define TestCase class and inherit required Mixins
+
+```py
+class SampleTestCase(TestCase, BasicUserSetupMixin, LevelSetupMixin)
+```
+
+- Initiate Mixins in either a setUpTestData or setUp Methods.
+
+<small>__setUpTestData()__: This method is called once per test case class and is used to set up test data that will be shared across all test methods within the class. It's commonly used to create database records or initialize other resources that will be used by multiple test methods.</small>  
+
+```py title="setUpTestData()"
+@classmethod
+def setUpTestData(cls):
+    """Call LevelSetupMixin setUpTestData."""
+    BasicUserSetupMixin.setUpTestData()    
+    LevelSetupMixin.setUpTestData()
+```
+
+<small>__setUp()__: This method is called before each individual test method within the test case class. It's used to set up any test-specific data or resources that are needed for the particular test method being executed. This allows you to customize the test environment for each test method independently.</small>
+
+TODO:Does this actually work?  Need to test using the setUp() method this way
+
+```py title="setUp()"
+def setUp(self):
+    """Call LevelSetupMixin setUpTestData."""
+    super().setUp()
+    BasicSetupMixin.setUpTestData()??
+    LevelSetupMixin.setUpTestData()??
+
+    # add additonal setup as necessary
+```
+
+- Access objects in individual tests with self
+```py
+self.user
+self.profile
+...
+```
+
+### Mixin Names & Objects Provided
+
+#### - BasicUserSetupMixin
+  
+- user
+- profile
+
+#### - SuperUserSetupMixin
+
+- superuser
+- superprofile
+
+#### - LevelSetupMixin
+
+- level(level=1 min_range=0 max_range=99)
+- level(level=2 min_range=100 max_range=199)
+- level(level=3 min_range=200 max_range=299)
+
+#### - BeatsSetupMixin (inherits BasicUserSetupMixin)
+
+- log1 (transaction_type="add", transaction_amount=100)
+- log2 (transaction_type="subtract", transaction_amount=30)
+- log3 (transaction_type="add", transaction_amount=50)
+- user (from BasicUserSetupMixin)
+- profile (from BasicUserSetupMixin)
+
+#### - RoomContainerSetupMixin (inherits BasicUserSetupMixin)
+
+- config_room (The room configuration object created for testing.)
+- config_container (The container configuration object created for testing.)
+- room
+- container
+- user (from BasicUserSetupMixin)
+- profile (from BasicUserSetupMixin)
+
+## Common Setup Class
 
 A CommonSetup class has been created in projects/tests/setup.py. It allows
 you to utilize the pre-defined setup, including users, profiles, and activities, directly in your tests.

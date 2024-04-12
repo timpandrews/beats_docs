@@ -30,14 +30,14 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: deep purple
-      accent: teal 
+      primary: indigo
+      accent: light blue
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: deep purple
-      accent: teal
+      primary: indigo
+      accent: light blue
 
 extra:
   social:
