@@ -52,7 +52,8 @@ ruff = "^0.1.7"
 <a href="https://allauth.org/" target="_blank">allauth.org</a> | 
 <a href="https://docs.allauth.org/en/latest/" target="_blank">:octicons-book-24: ReadTheDocs</a> | 
 <a href="https://pypi.org/project/django-environ/" target="_blank">:fontawesome-brands-python: PyPi</a> | 
-<a href="https://github.com/pennersr/django-allauth" target="_blank">:fontawesome-brands-github: GitHub</a>
+<a href="https://github.com/pennersr/django-allauth" target="_blank">:fontawesome-brands-github: GitHub</a> | 
+[:mag:  Internal Docs: allauth templates](extras/django_allauth.md)   
 
 - **django-auto-logout**  
 <small>The django-auto-logout library is a middleware for Django applications that automatically logs out users after a certain period of inactivity.</small>  
