@@ -27,7 +27,13 @@
     ```bash
     make migrations
     ```
-6. Run the Development Server:
+
+6. Create log director for use with the Mock Production env. (optional)
+    ```bash
+    mkdir -p /path/to/your/project/logs
+    chmod 755 /path/to/your/project/logs
+    ```
+7. Run the Development Server:
     <small>\* using makefile target</small>
     ```bash
     make run

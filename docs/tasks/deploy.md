@@ -1,5 +1,5 @@
-# Publish to Production 
-## Digital Ocean Droplet with Ubuntu 22.04 running nginx, gunicorn, and postgreSQL  
+# Deploy / Publish to Production 
+## Deploy to Digital Ocean Droplet with Ubuntu 22.04 running nginx, gunicorn, and postgreSQL  
 
 - Complete full Testing on local machine (fix any issues discovered in testing before next step)
 ```bash

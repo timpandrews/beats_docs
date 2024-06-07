@@ -75,13 +75,19 @@
     - create superuser
     - collectstatic
 
-8. Test Server
+8. Create log directory
+    ```bash
+    mkdir -p /home/_user_/beats/project/logs
+    chmod 755 /home/_user_/beats/project/logs
+    ```
+
+9. Test Server
     - sudo ufw allow 8000
     - python manage.py runserver 0.0.0.0:8000
     - view server @ http://ip_or_url:8000/
     - sudo ufw delete allow 8000
 
-9. Gunicorn Setup
+10. Gunicorn Setup
     - pip install gunicorn 
     - TODO: how to deal with this and other production only dependencies
     - Open gunicorn.socket file and add this code to the file
@@ -138,7 +144,7 @@
     file /run/gunicorn.sock
     ```
     
-10. Nginx Setup
+11. Nginx Setup
     - Create project file and add this code to it.
     ```bash
     sudo micro /etc/nginx/sites-available/beats
@@ -200,7 +206,7 @@
     sudo rm -rf media/photos
     ```
 
-11. Spend three days troubleshooting the 502 Bad Gateway Errors and issues with 
+12. Spend three days troubleshooting the 502 Bad Gateway Errors and issues with 
 serving static files :scream:
     - Error in wsgi.py.  
     ```diff title="wsgi.py"

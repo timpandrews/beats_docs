@@ -31,6 +31,6 @@
 - **signup.html**: Additional signup form used when signing up via a social account, if additional information is required.
 
 ### Template Location
-These templates are located inside the *djgano-allauth* package found at **.venv/lib/python3.12/site-packages/**.  Templates are located within the **templates/account/** and **templates/socialaccount/** directories. To override these templates, you should replicate the same directory structure within your project's templates directory. For example, to override the signup template for account management, you would place your custom signup.html in **your_project/templates/account/signup.html**.
+These templates are located inside the *djgano-allauth* package found at **.venv/lib/python3.12/site-packages/allauth**.  Templates are located within the **templates/account/** and **templates/socialaccount/** directories. To override these templates, you should replicate the same directory structure within your project's templates directory. For example, to override the signup template for account management, you would place your custom signup.html in **your_project/templates/account/signup.html**.
 
 By customizing these templates, you can provide a user experience that fits seamlessly with the rest of your site’s design and meets your project's specific needs.
