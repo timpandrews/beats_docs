@@ -1,9 +1,10 @@
 # Add a Kudos
 
-## 1. Update Kudos.yaml
+## Kudos.yaml
 
-**Description:** kudos.yaml contains the configuration for the kudos system.
-             It is used to define the kudos that can be awarded to users.
+- kudos.yaml contains the configuration for the kudos system.  It is used to define the kudos that can be awarded to users.
+- kudos.yaml is located @ **project/config/kudos.yaml**
+- The location for this file is defined in **settings.CONFIG_PATH**
 
 **Instructions:**
 ```yaml
@@ -53,8 +54,9 @@ two_hundred_km_in_a_week_trophy:
     color: Gold
 ```
 
-## 2. How Kudos are checked
-Kudos are checked when the project.apps.kudos.views.check_for_kudos function is called.
+## check_for_kudos()
+- This function can be found at: **project.apps.kudos.views**  
+- Kudos are checked when the check_for_kudos() function is called.
 
 The check_for_kudos() function checks and awards kudos to a user based on the given activity.
 
@@ -68,3 +70,8 @@ The function reference should be in the format `function:function_name`, and the
 function should be defined in the `project.apps.kudos.checks` module. The function
 should return a boolean indicating whether the criteria are met, and optionally a
 dictionary with additional details.
+
+## get_kudos_config()  
+- the get_kudos_config() function is used to read in the kudos.yaml file and retrieve 
+each kudo configuration.  It returns dict_items of configuration..
+- The get_kudos_config() function is located at: **project.apps.common.tools**
