@@ -13,6 +13,12 @@ Example: docs: update README with new setup instructions
 
 4. **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.).  
 Example: style: format code with Prettier  
+         style: Apply linting fixes across the codebase  
+         style: Ensure code adheres to PEP 8 standards  
+         style: Fix indentation and spacing issues  
+         style: Correct import order and remove unused imports  
+         style: Standardize docstring formats  
+         style: Address minor stylistic inconsistencies  
 
 5. **refactor**: A code change that neither fixes a bug nor adds a feature.  
 Example: refactor: improve performance of data processing  
