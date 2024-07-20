@@ -31,6 +31,43 @@ base_message.html
 
 Other email templates can then extend these base templates, allowing you to maintain a consistent look and feel across all your emails while only needing to update the base templates when making global changes.
 
+### Templates with Subject Templates
+
+In Django-Allauth, some emails use base templates, specific email-type templates, and subject templates. This allows for flexible customization of your emails.
+
+*Base Templates*  
+Base templates provide a consistent structure and should include both HTML and text versions:
+```bash
+base_message.html
+base_message.txt
+```
+*Specific Email-Type Templates*  
+To send HTML emails, both the base and specific email-type templates must have HTML versions:
+```bash
+email_confirmation_message.html
+email_confirmation_message.txt
+```
+*Subject Templates*  
+Subject templates define the email subject line and only need a text version:
+```bash
+email_confirmation_subject.txt
+```
+
+Example Directory Structure
+```markdown
+project/
+└── templates/
+    └── account/
+        └── email/
+            ├── base_message.html
+            ├── base_message.txt
+            ├── email_confirmation_message.html
+            ├── email_confirmation_message.txt
+            ├── email_confirmation_subject.txt
+            └── ...
+```
+This structure ensures your emails are well-formatted and compatible with various email clients.
+
 ### Example Directory Structure
 
 Here’s an example directory structure for your email templates:
