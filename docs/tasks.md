@@ -7,3 +7,5 @@
 ### [Updating ChangeLog :link:](tasks/change_log.md)
 
 ### [Add Kudos to Project :link:](tasks/add_kudos.md)
+
+### [Add Dependencies to Project :link:](tasks/add_dependencies.md)

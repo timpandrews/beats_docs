@@ -7,3 +7,5 @@
 #### [SMTP Info :link:](misc/smtp_info.md)
 #### [Domain & Hosting Configuration :link:](misc/domain_hosting.md)
 #### [Website Analytics with Umami :link:](misc/website_analytics.md)
+#### [SEO Tools :link:](misc/seo.md)
+#### [Import File (.fit & .gpx) Process Details](misc/import_file.md)

@@ -19,7 +19,17 @@ make lint
     - You should see something like this:  
     :octicons-git-compare-24: <mark>base: production</mark> :octicons-arrow-left-24: <mark style="background-color: lightblue">compare: main</mark> <span style="color:green"> :octicons-check-24: Able to merge.</span>  ...  
     click the Create Pull Request button and review the changes.
-    - Approve and Complete Pull Request according to procedures
+    - Approve and Complete Pull Request according to procedures.  
+    Pull Request title should be the version number.
+    ```
+    version: 0.1.18-alpha
+    ```
+    The description should show bulleted points that outline the major changes in this version.  It should be similar to the change log, but provide a little more detail.  It may also contain additional items that may not have been appropriate to include in the change log
+    ```
+    - Correct behavior of 'Cancel' button on the 'My Profile' page
+    - Add django-check-seo tools to dev environment.
+    - Enhanced 'Home' page to provide a better user experience by making it more engaging and informative. Added 'features' and 'How To' sections
+    ```
 - Open up a terminal on the Digital Ocean Droplet
 ```bash title="alias"
 remote
