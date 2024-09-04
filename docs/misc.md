@@ -9,3 +9,4 @@
 #### [Website Analytics with Umami :link:](misc/website_analytics.md)
 #### [SEO Tools :link:](misc/seo.md)
 #### [Import File (.fit & .gpx) Process Details](misc/import_file.md)
+#### [Sitemaps :link:](misc/sitemaps.md)
