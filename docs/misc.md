@@ -10,3 +10,5 @@
 #### [SEO Tools :link:](misc/seo.md)
 #### [Import File (.fit & .gpx) Process Details](misc/import_file.md)
 #### [Sitemaps :link:](misc/sitemaps.md)
+#### [Robots.txt :link:](misc/robots_dot_txt.md)
+#### [Commit Message Examples :link:](misc/commit_message_examples.md)

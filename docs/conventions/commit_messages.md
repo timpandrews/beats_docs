@@ -1,4 +1,6 @@
-# Commit Messages ![Commit Messages](../assets/icons/git-commit.svg){: width="6%"}  
+# Commit Messages ![Commit Messages](../assets/icons/git-commit.svg){: width="6%"} 
+
+
 
 Using prefixes in commit messages is a common practice in many development workflows to categorize the nature of the commit. This helps in understanding the purpose of the commit at a glance, and can be particularly useful when generating changelogs, reviewing commits, or managing releases. Here are some commonly used prefixes:
 
@@ -12,7 +14,9 @@ Example: fix: resolve issue with login validation
 Example: docs: update README with new setup instructions  
 
 4. **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.).  
-Example: style: format code with Prettier  
+Examples:  
+         style: apply PEP 8 and linting standards for improved code readability and consistency  
+         style: format code with Prettier  
          style: Apply linting fixes across the codebase  
          style: Ensure code adheres to PEP 8 standards  
          style: Fix indentation and spacing issues  
@@ -36,7 +40,11 @@ Example: build: update webpack configuration
 Example: ci: add GitHub Actions for automated testing  
 
 10. **chore**: Other changes that don’t modify src or test files (example scopes: updating dependencies).  
-Example: chore: update project dependencies  
+Example:  
+    chore: update dependencies using poetry-lock and poetry-export pre-commit hooks  
+    chore: update poetry.lock and requirements.txt using poetry-lock and poetry-export pre-commit hooks  
+    chore: update project dependencies  
+    
 
 11. **revert**: Reverts a previous commit.  
 Example: revert: revert commit 1234abcd  
