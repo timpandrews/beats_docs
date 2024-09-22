@@ -7,7 +7,7 @@ make test
 ```
 - Complete full Linting on local machine (fix any linting issues before moving on)
 ```bash
-make lint
+make pre-commit
 ```
 - Update :octicons-git-branch-24: main branch with latest changes.
     Either:

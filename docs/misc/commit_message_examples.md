@@ -1,7 +1,19 @@
 ``` txt title="generic linting commit"
-style: apply PEP 8 and linting standards for improved code readability and consistency
+style: Apply PEP 8 and linting standards for improved code readability and consistency.
 ```
 
 ``` txt  title="update dependencies with pre-commit hooks"
-chore: update poetry.lock and requirements.txt using poetry-lock and poetry-export pre-commit hooks
+chore: Update poetry.lock and requirements.txt using poetry-lock and poetry-export pre-commit hooks.
+```
+
+``` txt title="clean up"
+chore: Remove print statements and debugging artifacts for cleaner code.
+```
+
+``` txt title="Update Change Log"
+chore: Update changelog to reflect recent changes and improvements.
+```
+
+```txt title="PR_DRAFT"
+chore: Keep PR_DRAFT.md updated with latest updates
 ```
