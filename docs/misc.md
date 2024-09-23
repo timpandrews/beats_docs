@@ -12,3 +12,4 @@
 #### [Sitemaps :link:](misc/sitemaps.md)
 #### [Robots.txt :link:](misc/robots_dot_txt.md)
 #### [Commit Message Examples :link:](misc/commit_message_examples.md)
+#### [Makefile :link:](misc/makefile.md)
