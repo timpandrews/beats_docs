@@ -23,49 +23,140 @@ This modular structure allows for better organization and easier maintenance of 
 
 Here's a list of the main targets (commands) available in our Makefiles:
 
+### Main Commands
+
+- `help`: List all available commands  
+  Usage: `make help`
+
+### Testing Commands
+
+- `test`: Run all tests  
+  Usage: `make test [v=0|1|2|3]`
+  Example: `make test v=2`
+
+- `tests`: Alias for `test`  
+  Usage: `make tests [v=0|1|2|3]`
+
+- `test-account`: Run tests for the account app  
+  Usage: `make test-account [v=0|1|2|3] [path=<test_path>]`  
+  Example: `make test-account v=2 path="test_views.py::TestAccountView"`  
+
+- `test-activities`: Run tests for the activities app  
+  Usage: `make test-activities [v=0|1|2|3] [path=<test_path>]`  
+
+- `test-common`: Run tests for the common app  
+  Usage: `make test-common [v=0|1|2|3] [path=<test_path>]`  
+
+- `test-community`: Run tests for the community app  
+  Usage: `make test-community [v=0|1|2|3] [path=<test_path>]`  
+
+- `test-core`: Run tests for the core app  
+  Usage: `make test-core [v=0|1|2|3]`  
+
+- `test-first`: Run special tests in '_first' folder  
+  Usage: `make test-first [v=0|1|2|3]`  
+
+- `test-dashboard`: Run tests for the dashboard app  
+  Usage: `make test-dashboard [v=0|1|2|3] [path=<test_path>]`  
+
+- `test-feed`: Run tests for the feed app  
+  Usage: `make test-feed [v=0|1|2|3] [path=<test_path>]`  
+
+- `test-kudos`: Run tests for the kudos app  
+  Usage: `make test-kudos [v=0|1|2|3] [path=<test_path>]`  
+
+- `test-pages`: Run tests for the pages app  
+  Usage: `make test-pages [v=0|1|2|3] [path=<test_path>]`  
+
+- `test-profile`: Run tests for the profile app  
+  Usage: `make test-profile [v=0|1|2|3] [path=<test_path>]`  
+
+- `test-rides`: Run tests for the rides app  
+  Usage: `make test-rides [v=0|1|2|3] [path=<test_path>]`  
+
+- `test-showcase`: Run tests for the showcase app  
+  Usage: `make test-showcase [v=0|1|2|3] [path=<test_path>]`  
+
+- `testcase`: Run tests in the testcases folder  
+  Usage: `make testcase [v=0|1|2|3]`  
+
+- `test-coverage`: Run tests with coverage and generate report  
+  Usage: `make test-coverage`
+
+### Linting and Formatting Commands
+
+- `install-pre-commit`: Install pre-commit hooks  
+  Usage: `make install-pre-commit`
+
+- `update`: Update environment, run migrations, and install pre-commit hooks  
+  Usage: `make update`  
+
+- `lint`: Run quick linting with isort, ruff, and black  
+  Usage: `make lint`
+
+    _Note: This command can be run frequently, as it only runs linting tools that
+    will execute quickly to ensure code quality without slowing down your workflow._
+
+- `pre-commit`: Run pre-commit checks on all files  
+  Usage: `make pre-commit`
+
+    _Note: This command should be run before making major commits, completing
+    branches, or submitting a pull request. It ensures all linting tools are
+    executed and updates poetry.lock and requirements.txt files for
+    consistency._
+
+- `black`: Run black to format code  
+  Usage: `make black`  
+
+- `isort`: Run isort to sort imports  
+  Usage: `make isort`  
+
+- `ruff`: Run ruff to enforce Python style and linting  
+  Usage: `make ruff`  
+
+- `ruff-fix`: Run ruff with fix option to automatically correct issues  
+  Usage: `make ruff-fix`  
+
 ### Django Commands
-- `run`: Run the Django development server
-- `superuser`: Create a Django superuser
-- `migrations`: Create new Django migrations
-- `migrate`: Apply Django migrations
-- `collectstatic`: Collect static files for Django
-- `dj-shell`: Start a Django shell
-- `manage`: Run a Django management command
 
-### Linting and Formatting
-- `install-pre-commit`: Install pre-commit hooks
-- `update`: Update environment, run migrations, and install pre-commit hooks
-- `lint`: Run quick linting with isort, ruff, and black
-- `pre-commit`: Run pre-commit checks on all files
-- `black`: Run black to format code
-- `isort`: Run isort to sort imports
-- `ruff`: Run ruff to enforce Python style and linting
-- `ruff-fix`: Run ruff with fix option to automatically correct issues
+- `run`: Run the Django development server  
+  Usage: `make run [v=0|1|2|3]`  
 
-### Testing
-- `test` or `tests`: Run all tests
-- `test-account`: Run tests for the account app
-- `test-activities`: Run tests for the activities app
-- `test-common`: Run tests for the common app
-- `test-community`: Run tests for the community app
-- `test-core`: Run tests for the core app
-- `test-dashboard`: Run tests for the dashboard app
-- `test-feed`: Run tests for the feed app
-- `test-kudos`: Run tests for the kudos app
-- `test-pages`: Run tests for the pages app
-- `test-profile`: Run tests for the profile app
-- `test-rides`: Run tests for the rides app
-- `test-showcase`: Run tests for the showcase app
-- `test-coverage`: Run tests with coverage and generate report
+- `superuser`: Create a Django superuser  
+  Usage: `make superuser`  
+
+- `migrations`: Create new Django migrations  
+  Usage: `make migrations`  
+
+- `migrate`: Apply Django migrations  
+  Usage: `make migrate`  
+
+- `collectstatic`: Collect static files for Django  
+  Usage: `make collectstatic`  
+
+- `dj-shell`: Start a Django shell  
+  Usage: `make dj-shell`  
+
+- `manage`: Run a Django management command  
+  Usage: `make manage [cmd=<command>] [args=<arguments>]`  
+  Example: `make manage cmd=commandname args=arg1,arg2`  
 
 ### Poetry Commands
-- `install`: Install dependencies using Poetry
-- `shell`: Start a Poetry shell
 
-### Miscellaneous
-- `help`: Display available commands
-- `check-filenames`: Check and convert filenames to ride names
-- `test-email`: Send a test email
+- `install`: Install dependencies using Poetry  
+  Usage: `make install`  
+
+- `shell`: Start a Poetry shell  
+  Usage: `make shell`  
+
+### Miscellaneous Commands
+
+- `check-filenames`: Check and convert filenames to ride names  
+  Usage: `make check-filenames`  
+
+- `test-email`: Send a test email  
+  Usage: `make test-email type=<email_type>`  
+  Example: `make test-email type=welcome`  
 
 ## Running Makefile Commands
 

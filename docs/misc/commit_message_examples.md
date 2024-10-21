@@ -1,5 +1,7 @@
+<small>* Commit message conventions can be found [here](../conventions/commit_messages.md)</small>
+
 ``` txt title="generic linting commit"
-style: Apply PEP 8 and linting standards for improved code readability and consistency.
+style: Apply PEP 8 and other linting standards for improved code readability and consistency.
 ```
 
 ``` txt  title="update dependencies with pre-commit hooks"

@@ -4,6 +4,8 @@
 
 Using prefixes in commit messages is a common practice in many development workflows to categorize the nature of the commit. This helps in understanding the purpose of the commit at a glance, and can be particularly useful when generating changelogs, reviewing commits, or managing releases. Here are some commonly used prefixes:
 
+<small>* Specific examples of common commit messages can be found [here](../misc/commit_message_examples.md)</small>
+
 1. **feat:** A new feature for the user.  
 Example: feat: add user profile page
 

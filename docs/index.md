@@ -21,5 +21,6 @@ Documentation for CyclingBeats (www.cyclingbeats.com).  Ride, Record, Reward: Un
 - ### [Beats-Docs](beats_docs.md)
 - ### [Misc](misc.md)
 - ### [Extras](extras.md)
+- ### [v2](v2/v2.md)
 
     
