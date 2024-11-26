@@ -14,3 +14,5 @@
 #### [Commit Message Examples :link:](misc/commit_message_examples.md)
 #### [Makefile :link:](misc/makefile.md)
 #### [django-hijack :link:](misc/django_hijack.md)
+#### [Deep Dive: Streaks](misc/deep_dive_streaks.md)
+#### [Management Commands](misc/management_commands.md)

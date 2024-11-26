@@ -41,7 +41,7 @@ kudos:
       color: ForestGreen
 ```
 #### Required Fields:   
-- include_in_check: Set to true if this kudo should be checked for each activity.    
+- include_in_check: Set to true if this kudo should be checked for each activity.  You can set this to false for kudos that are only awarded under specific conditions (e.g. New User Kudos)
 - beats: The number of beats awarded for this kudo.   
 - code: A Python code snippet that sets the achieved variable to True or False.   
 - kudos_type: Can be "trophy", "badge", or "streak".    
@@ -168,34 +168,51 @@ two_hundred_km_in_a_week_trophy:
 <hr style="border: 1px solid black;">
 
 ### check_for_kudos()
-- This function can be found at: **project.apps.kudos.views**  
-- Kudos are checked when the check_for_kudos() function is called.
 
-The check_for_kudos() function checks and awards kudos to a user based on the given activity.
+The check_for_kudos function is located in the project/apps/kudos/views.py file. This function serves as the main entry point for evaluating and awarding kudos to users based on their activities.
 
-This function reads the kudo configuration from a `kudos.yaml` file, then
-loops through each kudo in the configuration to determine if the given activity
-meets the criteria for any kudo. If a kudo's criteria are met, the kudo is created
-and associated with the user and activity.
+#### Purpose:
+The primary purpose of check_for_kudos is to determine whether a user has earned any kudos for a given activity. It acts as a bridge between the activity data and the kudo definitions, applying the criteria specified in the kudos.yaml configuration file to decide if a kudo should be awarded.
 
-The kudo criteria can be specified as either inline code or a function reference.
-The function reference should be in the format `function:function_name`, and the
-function should be defined in the `project.apps.kudos.checks` module. The function
-should return a boolean indicating whether the criteria are met, and optionally a
-dictionary with additional details.
+#### Functionality:
+- Reads the kudo configuration from the kudos.yaml file.
+- Iterates through each kudo definition in the configuration.
+- Evaluates whether the given activity meets the criteria for each kudo.
+- Awards kudos to the user when criteria are met.
+- Handles both simple (inline code) and complex (function-based) kudo checks.
 
-<hr style="border: 1px solid black;">
+#### How It's Called:
+This function is typically called after a new activity is created or updated. It would be invoked in views or background tasks that process user activities.
 
-### get_kudos_config()  
-- the get_kudos_config() function is used to read in the kudos.yaml file and retrieve 
-each kudo configuration.  It returns dict_items of configuration..
-- The get_kudos_config() function is located at: **project.apps.common.tools**
+```python
+# After creating or updating an activity
+check_for_kudos(user, activity)
+```
+
+#### Key Features:
+- Supports excluding specific kudos from being checked (useful for combined activities).
+- Dynamically imports and executes complex check functions from project.apps.kudos.checks.
+- Logs various stages of the kudo checking process for debugging and monitoring.
+- Handles both inline code and function-based kudo criteria.
+
+#### Parameters:
+- *user*: The user for whom kudos are being checked.
+- *activity*: The activity being evaluated for kudos.
+- *excluded_kudos*: An optional list of kudo names to exclude from checking.
+
+#### Integration:
+This function integrates closely with:  
+- The **kudos.yaml** configuration file.  
+- The **checks.py** module for complex kudo evaluations.  
+- The logging system for tracking the kudo checking process.  
+
+By centralizing the kudo checking logic in this function, the application maintains a consistent approach to awarding kudos across different types of activities and achievements.
 
 <hr style="border: 1px solid black;">
 
 ### checks.py
 
-The checks.py file is a crucial component of the kudos system, located in the project/apps/kudos/ directory. This file contains the logic for evaluating complex kudos that require more sophisticated checks than simple database queries.
+The checks.py file is located in the project/apps/kudos/ directory. This file contains the logic for evaluating complex kudos that require more sophisticated checks than simple database queries.
 
 #### Purpose and Functionality:
 - Houses functions that determine whether a user has earned specific kudos based on their activities.
@@ -225,3 +242,34 @@ The checks.py file is a crucial component of the kudos system, located in the pr
 - New complex kudo checks can be added to this file, following the established patterns and conventions.
 - Developers can create custom logic for new types of achievements or milestones.
 - By centralizing complex kudo checks in checks.py, the application maintains a clean separation of concerns and allows for easy addition and modification of kudos logic.
+
+<hr style="border: 1px solid black;">
+
+### get_kudos_config() 
+
+The `get_kudos_config()` function is a crucial utility that retrieves the kudos configuration for the project from a YAML file.
+
+#### Purpose
+- Loads and returns the kudos configuration from `kudos.yaml`
+- Centralizes configuration access for consistency across the project
+
+#### Location
+- File: `project/apps/common/utils/config.py`
+- Module: `project.apps.common.utils.config`
+
+#### Usage
+- Primary caller: `check_for_kudos()` function in `project/apps/kudos/views.py`
+- Used in kudos-related operations throughout the project
+
+#### Functionality
+1. Constructs the path to `kudos.yaml` using `settings.CONFIG_PATH`
+2. Opens and reads the YAML file
+3. Loads the YAML content into a Python dictionary
+4. Extracts and returns the 'kudos' section as `dict_items`
+
+#### Returns
+- `dict_items`: Key-value pairs of kudos configurations
+
+The `get_kudos_config()` function ensures that all parts of the project have access to the latest kudos configuration, facilitating consistent kudos checking and awarding processes.
+
+<hr style="border: 1px solid black;">
